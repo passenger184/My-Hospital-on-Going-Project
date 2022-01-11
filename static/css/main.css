@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none !important;
+    outline: none !important;
+    text-decoration: none !important;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+
+
+#nav > .navbar {
+    border-width: 0px !important;
+    -webkit-box-shadow: 0px 0px !important;
+    box-shadow: 0px 0px !important;
+    background-color: rgba(0,0,0,0.0) !important;
+    background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 100% , rgba(0,0,0,0.00)));
+    background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+    background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+
+}
+
+
+
+.navbar-nav {
+    padding-left: 35rem;
+}
+
+.navbar-brand {
+    padding-left: 10rem;
+}
+
+ .nav-item {
+    padding: 0.9em;
+}
+
+.aa:hover {
+    color: black;
+}
+
+#carouselExampleFade {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+footer {
+    margin-top: 5rem;
+    background: rgba(0,0,0, 0.815);
+    overflow-x: hidden ;
+    padding: 14vmin 18vmin;
+}
+
+footer p > span {
+    color: #ff512f;
+}
+
+footer input {
+    border: none !important;
+}
+
+footer input::placeholder {
+    color: white !important;
+}
+
+footer .input-group .input-group-text {
+    background: var(--bggradient);
+    border: none;
+}
+
+footer .column i {
+    color: #dd2476;
+}
+
+footer .column i+i {
+    padding: 0 0.5em;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.815);
+    z-index: 9999;
+    transition: all 1.5s ease;
+}

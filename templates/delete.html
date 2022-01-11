@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+
+
+ 
+   <div class="container mt-4" style='background-color:yellow'>
+       <div class="row">
+           <div class="col-8">
+             <form action="" method='POST'>
+                {% csrf_token %}
+                <strong class='m-3 mx-3 '><h2>Patient Record</h2></strong>
+                      
+                  {{form.as_p}}
+                       
+                       
+                       
+                <div class="form-group mb-3 mx-5">
+                    <a type="submit" class='btn btn-info' href=' {% url 'confirm' id %} '>Delete</a>
+                    <a type="submit" class='btn btn-info' href='/'>Cancel</a>
+                </div>
+                
+             </form>
+           </div>
+       </div>
+   </div>
+
+
+
+{% endblock content %}
+    

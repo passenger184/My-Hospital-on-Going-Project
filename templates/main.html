@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% load static %}
+  {% block content %}
+      
+  
+<main>
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel " id='slider'>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000" >
+              <img src=" {% static 'src/img/1.jpg' %} " class="d-block w-100" alt="...">
+              <div class="carousel-caption" style="margin-bottom: 10rem; margin-right: 30rem; color: black;">
+              <h1>Patient Records</h1><br>
+              {% if messages %}
+              {% for message in messages %}
+                  <div class="alert alert-{{message.tags}}">
+                  {{message}}
+                  </div>
+              {% endfor %}
+              {% endif %}
+                
+              <div><a class="btn btn-success  btn-lg " href="{% url 'add' %}" role="button">ADD</a></div><br>
+              <div><a class="btn btn-success  btn-lg " href=" {% url 'search' %} " role="button">UPDATE</a></div><br>
+              <div><a class="btn btn-success  btn-lg " href=" {% url 'search1' %}" role="button">DELETE</a></div><br>
+              <div><a class="btn btn-success  btn-lg " href="#" role="button">FULL_HISTORY</a></div><br>
+            </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000" >
+              <img src=" {% static 'src/img/2.jpg' %}" class="d-block w-100" alt="...">
+              <div class="carousel-caption" style="margin-bottom: 20rem; margin-right: 30rem; color: black;">
+                <h1>Patient Records</h1><br>
+
+                <div><a class="btn btn-success  btn-lg " href="{% url 'add' %}" role="button">ADD</a></div><br>
+                <div><a class="btn btn-success  btn-lg " href=" {% url 'search' %} " role="button">UPDATE</a></div><br>
+                <div><a class="btn btn-success  btn-lg " href=" {% url 'search1' %}" role="button">DELETE</a></div><br>
+                <div><a class="btn btn-success  btn-lg " href="#" role="button">FULL_HISTORY</a></div><br>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000" >
+              <img src=" {% static 'src/img/3.jpg' %}" class="d-block w-100" alt="...">
+              <div class="carousel-caption" style="margin-bottom: 10rem; margin-right: 30rem; color: black;">
+                <h1>Patient Records</h1><br>
+                <div><a class="btn btn-success  btn-lg " href="{% url 'add' %}" role="button">ADD</a></div><br>
+                <div><a class="btn btn-success  btn-lg " href=" {% url 'search' %} " role="button">UPDATE</a></div><br>
+                <div><a class="btn btn-success  btn-lg " href=" {% url 'search1' %}" role="button">DELETE</a></div><br>
+                <div><a class="btn btn-success  btn-lg " href="#" role="button">FULL_HISTORY</a></div><br>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+    </div>
+</main>
+  
+   {% endblock content %}
+   
+                
+                
+                
+                
+                
+                
